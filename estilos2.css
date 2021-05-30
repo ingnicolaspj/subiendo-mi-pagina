@@ -1,0 +1,47 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span{
+    font-size: 100px;
+    font-family: sans-serif;
+    animation: saltar 3s infinite cubic-bezier(.59,.95,.6,.17);
+    transform: translateY(0);
+    display: inline-block;
+}
+
+span:nth-child(1){
+    animation-delay: 0;
+}
+span:nth-child(2){
+    animation-delay: 0.2s;
+}
+span:nth-child(3){
+    animation-delay:0.3s;
+}
+span:nth-child(4){
+    animation-delay: 0.4s;
+}
+
+@keyframes saltar {
+
+    0%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(100px);
+    }
+    80%{
+        transform: translateY(110px);
+    }
+    
+}
